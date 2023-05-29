@@ -1,0 +1,83 @@
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: #CC0633;
+    padding: 10px;
+}
+
+p {
+    padding-left: 300px;
+    width: 365px;
+    color: #803535;
+    background-color: #efabbb;
+}
+
+label {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.boundText {
+    padding: 10px 100px 10px 50px;
+}
+
+.histogramText {
+    padding: 10px 50px 10px 50px;
+}
+
+.main {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+}
+
+.column1 {
+    margin: 5px;
+    background-color: #E4EBF3;
+    width: 350px;
+}
+
+.column2 {
+    margin: 5px;
+    background-color: #E4EBF3;
+    width: 300px;
+}
+
+.column3 {
+    margin: 5px;
+    padding: 10px;
+    background-color: #E4EBF3;
+}
+
+input[type="text"] {
+    width: 75px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: right;
+}
+
+#ADD {
+    padding: 5px;
+    border-style: groove;
+    background-color: #ee496f;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.histogram {
+    background-color: black;
+}

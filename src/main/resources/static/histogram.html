@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="histogram.css">
+    <script src="calculate.js" defer></script>
+    <title>Histogram Generator</title>
+</head>
+<body>
+    <h2>Histogram Generator</h2>
+    <p id="error"></p>
+    <div class="main">
+        <div class="column1">
+            <h3>Lower Bounds</h3>
+            <table>
+                <tr>
+                    <td class="boundText">Max</td>
+                    <td><input type="text" name="Max" class="Bounds" id="Max" value="100.00"></td>
+                </tr>
+                <tr>
+                    <td class="boundText">A+</td>
+                    <td><input type="text" name="A+" class="Bounds" id="APlus" value="95.00"></td>
+                </tr>
+                <tr>
+                    <td class="boundText">A</td>
+                    <td><input type="text" name="A" class="Bounds" id="A" value="90.00"></td>
+                </tr>
+                <tr>
+                    <td class="boundText">A-</td>
+                    <td><input type="text" name="A-" class="Bounds" id="AMinus" value="85.00"></td>
+                </tr>
+                <tr>
+                    <td class="boundText">B+</td>
+                    <td><input type="text" name="B+" class="Bounds" id="BPlus" value="80.00"></td>
+                </tr>
+                <tr>
+                    <td class="boundText">B</td>
+                    <td><input type="text" name="B" class="Bounds" id="B" value="75.00"></td>
+                </tr>
+                <tr>
+                    <td class="boundText">B-</td>
+                    <td><input type="text" name="B-" class="Bounds" id="BMinus" value="70.00"></td>
+                </tr>
+                <tr>
+                    <td class="boundText">C+</td>
+                    <td><input type="text" name="C+" class="Bounds" id="CPlus" value="65.00"></td>
+                </tr>
+                <tr>
+                    <td class="boundText">C</td>
+                    <td><input type="text" name="C" class="Bounds" id="C" value="60.00"></td>
+                </tr>
+                <tr>
+                    <td class="boundText">C-</td>
+                    <td><input type="text" name="C-" class="Bounds" id="CMinus" value="55.00"></td>
+                </tr>
+                <tr>
+                    <td class="boundText">D</td>
+                    <td><input type="text" name="D" class="Bounds" id="D" value="50.00"></td>
+                </tr>
+                <tr>
+                    <td class="boundText">F</td>
+                    <td><input type="text" name="F" class="Bounds" id="F" value="0.00"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="side">
+            <div class="column2">
+                <h3>Histogram</h3>
+                <table id="histogramTable">
+                    <tr id="APlusRow">
+                        <td class="histogramText">A+</td>
+                    </tr>
+                    <tr id="ARow">
+                        <td class="histogramText">A</td>
+                    </tr>
+                    <tr id="AMinusRow">
+                        <td class="histogramText">A-</td>
+                    </tr>
+                    <tr id="BPlusRow">
+                        <td class="histogramText">B+</td>
+                    </tr>
+                    <tr id="BRow">
+                        <td class="histogramText">B</td>
+                    </tr>
+                    <tr id="BMinusRow">
+                        <td class="histogramText">B-</td>
+                    </tr>
+                    <tr id="CPlusRow">
+                        <td class="histogramText">C+</td>
+                    </tr>
+                    <tr id="CRow">
+                        <td class="histogramText">C</td>
+                    </tr>
+                    <tr id="CMinusRow">
+                        <td class="histogramText">C-</td>
+                    </tr>
+                    <tr id="DRow">
+                        <td class="histogramText">D</td>
+                    </tr>
+                    <tr id="FRow">
+                        <td class="histogramText">F</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="column3">
+                <label for="newGrade">New Grade:</label>
+                <input type="text" name="newGrade" id="newGrade">
+                <input type="button" value="ADD" id="ADD" onclick="addGrade()">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
